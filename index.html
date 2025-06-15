@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Data Maturity Assessment Results</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Your Data Maturity Assessment</h1>
+            <p class="subtitle">Understanding where you stand and where you can grow</p>
+        </header>
+
+        <main class="main-content">
+            <div class="chart-container">
+                <canvas id="maturityChart"></canvas>
+            </div>
+            
+            <div class="results-summary">
+                <h2>Your Maturity Scores</h2>
+                <div class="score-grid">
+                    <div class="score-item">
+                        <span class="score-label">Data Function</span>
+                        <span class="score-value" id="score-function">-</span>
+                    </div>
+                    <div class="score-item">
+                        <span class="score-label">Trusted Data</span>
+                        <span class="score-value" id="score-trust">-</span>
+                    </div>
+                    <div class="score-item">
+                        <span class="score-label">Capabilities</span>
+                        <span class="score-value" id="score-capabilities">-</span>
+                    </div>
+                    <div class="score-item">
+                        <span class="score-label">Management</span>
+                        <span class="score-value" id="score-management">-</span>
+                    </div>
+                    <div class="score-item">
+                        <span class="score-label">Leadership</span>
+                        <span class="score-value" id="score-leadership">-</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="insights-section">
+                <h2>Key Insights</h2>
+                <div class="insight-card" id="primary-insight">
+                    <h3 id="insight-title">Analyzing your responses...</h3>
+                    <p id="insight-description">Your personalized insights will appear here.</p>
+                </div>
+            </div>
+
+            <div class="cta-section">
+                <h2>Ready to Take the Next Step?</h2>
+                <p>Get personalized recommendations and strategies delivered to your inbox.</p>
+                <form class="email-form" id="emailForm">
+                    <input type="email" placeholder="Enter your email address" required id="emailInput">
+                    <button type="submit">Get My Personalized Report</button>
+                </form>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2024 Your Company. Empowering data-driven decisions.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
